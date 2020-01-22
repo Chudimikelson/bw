@@ -1,16 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Standings from './components/Standings';
+import {Container} from 'reactstrap';
+import Menu from './components/Menu';
 
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <Standings/>
-      <Footer/>
+      <Container>
+        <Header/>
+        <Menu/>
+        <Footer/>
+      </Container>
     </div>
   );
 }
