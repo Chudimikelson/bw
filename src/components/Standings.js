@@ -41,6 +41,9 @@ class Standings extends Component {
     
     return (
       <Container>
+        <div className="wallpaper img-responsive">
+          <div className="text-center py-3 title">PREMIER LEAGUE</div>
+        </div>  
       <Table borderless size="sm">
       <thead>
         <tr>
@@ -60,7 +63,7 @@ class Standings extends Component {
         return (
         <tr key={standing.position}>
           <td>{standing.position}</td>
-          <td><img className="crest img-responsive" src={standing.team.crestUrl}/></td>
+          <td><img alt={standing.team.name} className="crest img-responsive" src={standing.team.crestUrl}/></td>
           <td>{standing.team.name}</td>
           <td>{standing.playedGames}</td>
           <td>{standing.won}</td>

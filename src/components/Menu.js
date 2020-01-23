@@ -2,6 +2,11 @@ import React, { useState } from 'react';
 import { TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardText, Row, Col } from 'reactstrap';
 import classnames from 'classnames';
 import Standings from './Standings';
+import LaLiga from './LaLiga';
+import Bundesliga from './Bundesliga';
+import SeriaA from './SeriaA';
+import UEFA from './UEFA';
+import WorldCup from './WorldCup';
 
 const Menu = (props) => {
   const [activeTab, setActiveTab] = useState('1');
@@ -24,34 +29,78 @@ const Menu = (props) => {
           <NavLink
             className={classnames({ active: activeTab === '2' })}
             onClick={() => { toggle('2'); }}
-          >
-            LIGA BBVA
+          >LIGA BBVA
+          </NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink
+            className={classnames({ active: activeTab === '3' })}
+            onClick={() => { toggle('3'); }}
+          >SERIA A
+          </NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink
+            className={classnames({ active: activeTab === '4' })}
+            onClick={() => { toggle('4'); }}
+          >BUNDESLIGA
+          </NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink
+            className={classnames({ active: activeTab === '5' })}
+            onClick={() => { toggle('5'); }}
+          >UEFA
+          </NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink
+            className={classnames({ active: activeTab === '6' })}
+            onClick={() => { toggle('6'); }}
+          >WORLD CUP
           </NavLink>
         </NavItem>
       </Nav>
       <TabContent activeTab={activeTab}>
         <TabPane tabId="1">
           <Row>
-            <Col sm="12">
+            <Col>
               <Standings/>
             </Col>
           </Row>
         </TabPane>
         <TabPane tabId="2">
           <Row>
-            <Col sm="6">
-              <Card body>
-                <CardTitle>Special Title Treatment</CardTitle>
-                <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
-                <Button>Go somewhere</Button>
-              </Card>
+            <Col >
+              <LaLiga/>
             </Col>
-            <Col sm="6">
-              <Card body>
-                <CardTitle>Special Title Treatment</CardTitle>
-                <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
-                <Button>Go somewhere</Button>
-              </Card>
+          </Row>
+        </TabPane>
+        <TabPane tabId="3">
+          <Row>
+            <Col>
+              <SeriaA/>
+            </Col>
+          </Row>
+        </TabPane>
+        <TabPane tabId="4">
+          <Row>
+            <Col >
+              <Bundesliga/>
+            </Col>
+          </Row>
+        </TabPane>
+        <TabPane tabId="5">
+          <Row>
+            <Col>
+              <UEFA/>
+            </Col>
+          </Row>
+        </TabPane>
+        <TabPane tabId="6">
+          <Row>
+            <Col >
+              <WorldCup/>
             </Col>
           </Row>
         </TabPane>

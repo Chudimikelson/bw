@@ -12,7 +12,6 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
-  NavbarText
 } from 'reactstrap';
 import Logo from './BrandLogo';
 
@@ -23,17 +22,26 @@ const Header = (props) => {
 
   return (
     <div>
-      <Navbar color="light" light expand="md">
+      <Navbar id="yellow" light expand="md">
         <Logo/>
         <NavbarBrand href="/" id="bw-brand">BW Football</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
-          <Nav className="mr-auto" navbar>
+          <Nav className="ml-auto" navbar>
             <NavItem>
-              <NavLink href="/components/">Components</NavLink>
+              <NavLink href="/components/" className="menu-text">news</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+              <NavLink href="/" className="menu-text">results</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/" className="menu-text">tables</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/" className="menu-text">tips</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/" className="menu-text">about</NavLink>
             </NavItem>
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
@@ -53,7 +61,7 @@ const Header = (props) => {
               </DropdownMenu>
             </UncontrolledDropdown>
           </Nav>
-          <NavbarText>Simple Text</NavbarText>
+
         </Collapse>
       </Navbar>
     </div>

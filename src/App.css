@@ -36,6 +36,9 @@ li {
   font-style: normal;
   background: #FDC624;
 }
+#yellow {
+  background: #FDC624;
+}
 #bw-brand {
   color: rgba(1, 1, 1, 0.8);
   font-family: Poppins;
@@ -77,3 +80,36 @@ li {
   height: 15px;
 }
 
+.wallpaper {
+
+height: 100px;
+background: url("./wallpaper.png");
+color: #FFFFFF;
+font-family: Poppins;
+font-style: normal;
+font-weight: bold;
+font-size: 2rem;
+}
+.title {
+  height: 100px;
+  background: #25252f9c;
+}
+.menu-text {
+font-family: Poppins;
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+color: #23262B;
+text-transform: uppercase;
+}
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+  color: #495057;
+  background-color: #fff;
+  border-color: #fff #fff #FEC820 #fff !important;
+  margin-bottom: 2px;
+}
+.nav-tabs .nav-link {
+  border: 1.5px solid transparent;
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+}
