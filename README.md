@@ -8,6 +8,9 @@ It took about 4 days to get it up and running up to the minimum requirements/obj
 
 The most challenging aspect of this project was fetching data from football-data.org's API as this was my first time trying out the API. However, it was fun and easy as soon as i figured out how to use nested data provided in JSON format, thanks to React's state concept.
 
+## Hosted on Netlify
+
+You can view this project live on [BW Football](https://bwfootball.netlify.com/)
 
 ## Features
 
