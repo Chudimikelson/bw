@@ -1,5 +1,6 @@
 import React from 'react';
 import { Table, Container } from 'reactstrap';
+import Comingsoon from './Comingsoon';
 
 const SeriaA = () => {
   return (
@@ -24,6 +25,7 @@ const SeriaA = () => {
 
       </tbody>
       </Table>
+      <Comingsoon/>
       </Container>
   )
 }

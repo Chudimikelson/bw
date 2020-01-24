@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardText, Row, Col } from 'reactstrap';
+import { TabContent, TabPane, Nav, NavItem, NavLink, Row, Col } from 'reactstrap';
 import classnames from 'classnames';
 import Standings from './Standings';
 import LaLiga from './LaLiga';
@@ -16,7 +16,7 @@ const Menu = (props) => {
   }
 
   return (
-    <div>
+    <div className="container">
       <Nav tabs>
         <NavItem>
           <NavLink

@@ -47,20 +47,21 @@ li {
   font-style: normal;
   padding-left: 20px;
 }
-#all-rights {
+#all-rights, #advert-banner {
   font-family: Poppins;
   font-size: 11px;
   font-weight: 600;
   font-style: normal;
   background: #2C2C36;
   text-align: center;
+  min-height: 20px;
 }
 #footer-mid {
   background: #25252F;
 }
 #footer-top {
   font-family: Poppins;
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: 500;
   font-style: normal;
   background: #2F2F39;
@@ -79,11 +80,15 @@ li {
   width: 15px;
   height: 15px;
 }
+.comingsoon {
+  background: url('./img/under-construction-gif-11.gif');
+  min-height: 500px;
+}
 
 .wallpaper {
 
 height: 100px;
-background: url("./wallpaper.png");
+background: url("./img/wallpaper.png");
 color: #FFFFFF;
 font-family: Poppins;
 font-style: normal;
@@ -113,3 +118,29 @@ text-transform: uppercase;
   border-top-left-radius: 0 !important;
   border-top-right-radius: 0 !important;
 }
+.navbar-toggler {
+  border-color: transparent!important;
+}
+@media screen and (max-width:767px) {
+  .nav-tabs {
+    flex-wrap: nowrap !important;
+    flex-direction: row;
+    overflow-x: scroll !important;
+  }
+
+  .nav-item {
+    min-width: max-content !important;
+  }
+  .comingsoon {
+    background: url('./img/comingsoon.jpeg');
+    background-repeat: no-repeat;
+  }
+  #footer-top {
+    font-size: .511rem;
+    font-weight: 200;
+  }
+  #explore {
+    font-size: .6rem;
+    font-weight: bold;
+  }
+}  

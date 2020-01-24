@@ -3,14 +3,14 @@ import { Container,Row, Col, Button } from 'reactstrap';
 import Logo from './BrandLogo';
 import {Fb, Tw, Ins, Yot} from './icons/icons';
 
-const Footer = (props) => {
+const Footer = () => {
   return (
-    <Container className="themed-container">
+    <Container className="themed-container" fluid={true}>
       <Row id="footer-top">
-        <Col>Never miss the action fom your winning team</Col>
-        <Col ><Button id="explore" size="sm">Explore More</Button></Col>
+        <Col className="py-2">Never miss the action fom your winning team</Col>
+        <Col className="py-1"><Button id="explore" size="sm">Explore More</Button></Col>
       </Row>
-      <Row id="footer-mid">
+      <Row id="footer-mid" className="pt-3">
         <Col>
           <Row>
             <Col>
@@ -40,9 +40,7 @@ const Footer = (props) => {
               </ul>
             </Col>
           </Row>
-          <Row id="all-rights">
-            <Col>All Rights Reserved 2019</Col>
-          </Row>
+          
         </Col>
         <Col md="5" id="bw-footer" className="p-3">
           <Logo/>
@@ -57,6 +55,9 @@ const Footer = (props) => {
           </div>
         </Col>
       </Row>
+      <Row id="all-rights">
+            <Col>All Rights Reserved 2019</Col>
+          </Row>
     </Container>
   );
 }

@@ -8,10 +8,6 @@ import {
   Nav,
   NavItem,
   NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
 } from 'reactstrap';
 import Logo from './BrandLogo';
 
@@ -22,6 +18,9 @@ const Header = (props) => {
 
   return (
     <div>
+      <div id="advert-banner">
+
+      </div>
       <Navbar id="yellow" light expand="md">
         <Logo/>
         <NavbarBrand href="/" id="bw-brand">BW Football</NavbarBrand>
@@ -43,23 +42,7 @@ const Header = (props) => {
             <NavItem>
               <NavLink href="/" className="menu-text">about</NavLink>
             </NavItem>
-            <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle nav caret>
-                Options
-              </DropdownToggle>
-              <DropdownMenu right>
-                <DropdownItem>
-                  Option 1
-                </DropdownItem>
-                <DropdownItem>
-                  Option 2
-                </DropdownItem>
-                <DropdownItem divider />
-                <DropdownItem>
-                  Reset
-                </DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown>
+            
           </Nav>
 
         </Collapse>

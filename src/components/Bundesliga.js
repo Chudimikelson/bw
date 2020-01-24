@@ -1,5 +1,6 @@
 import React from 'react';
 import { Table, Container } from 'reactstrap';
+import Comingsoon from './Comingsoon';
 
 const Bundesliga = () => {
   return (
@@ -24,6 +25,7 @@ const Bundesliga = () => {
 
       </tbody>
       </Table>
+      <Comingsoon/>
       </Container>
   )
 }
